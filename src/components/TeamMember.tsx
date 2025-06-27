@@ -5,9 +5,7 @@ type TeamMemberProps = {
 
 const TeamMember: React.FC<TeamMemberProps> = ({ name, image }) => {
   return (
-    <div 
-      id="team"
-      className="flex flex-col text-center">
+    <div className="flex flex-col text-center">
       <img
         src={image}
         alt={name}
