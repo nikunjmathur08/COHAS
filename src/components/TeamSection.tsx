@@ -11,7 +11,7 @@ const OurTeam = () => {
   return (
     <section 
       id="team"
-      className="min-h-screen px-8 -mb-52 font-bricolage">
+      className="px-8 py-8 font-bricolage">
       <h1 className="text-4xl md:text-5xl font-bold text-black mb-8">
         Our Team
       </h1>

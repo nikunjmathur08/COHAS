@@ -18,7 +18,7 @@ const OurPrograms = () => {
   return (
     <section 
       id="programs"
-      className="min-h-screen py-8 px-12">
+      className="py-8 px-12">
       <h1 className="text-4xl md:text-5xl font-bricolage font-bold text-black mb-12">
         Our Programs
       </h1>

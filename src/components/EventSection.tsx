@@ -18,7 +18,7 @@ const OurEvents = () => {
   return (
     <section 
       id="events"
-      className="min-h-screen pt-4 px-12">
+      className="py-8 px-12">
       <h1 className="text-4xl md:text-5xl font-bricolage font-bold text-black mb-12">
         Our Events
       </h1>

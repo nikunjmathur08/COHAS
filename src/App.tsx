@@ -14,18 +14,22 @@ function App() {
       <img 
         src={Background} 
         alt="Background" 
-        className="fixed top-0 left-1/2 transform -translate-x-1/2 object-contain h-auto w-auto max-w-[1400px] max-h-none opacity-25 z-0 pointer-events-none select-none"/>
+        className="fixed top-0 left-1/2 transform -translate-x-1/2 object-contain h-auto w-auto max-w-[1400px] max-h-none opacity-25 z-0 pointer-events-none select-none"
+      />
+      
       <div className="relative z-10">
-        <Header />
-        <main>
-          <HeroSection />
-          <AboutUsSection />
-          <ProgramSection />
-          <EventSection />
-          <TeamSection />
-        </main>
-        <Donate />
-        <Footer />
+        <div className="max-w-7xl mx-auto px-6"> {/* ✨ added wrapper */}
+          <Header />
+          <main>
+            <HeroSection />
+            <AboutUsSection />
+            <ProgramSection />
+            <EventSection />
+            <TeamSection />
+          </main>
+          <Donate />
+          <Footer />
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import Img6 from "../assets/Donate6.png"; // bottom-right
 
 export default function DonateUsLayout() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 pb-32">
+    <div className="flex items-center justify-center px-4 py-32">
       <div className="max-w-7xl w-full grid grid-cols-3 gap-4">
         {/* Left Column: Top + Bottom */}
         <div className="flex flex-col gap-4">
@@ -18,7 +18,7 @@ export default function DonateUsLayout() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="col-span-1 row-span-1 w-full h-[540px] rounded-xl overflow-hidden">
+          <div className="col-span-1 row-span-1 w-full h-[502px] rounded-xl overflow-hidden">
             <img
               src={Img2}
               alt="Bottom Left Closeup"
@@ -59,7 +59,7 @@ export default function DonateUsLayout() {
 
         {/* Right Column: Top + Bottom */}
         <div className="flex flex-col gap-4">
-          <div className="col-span-1 row-span-2 h-[540px] rounded-xl overflow-hidden">
+          <div className="col-span-1 row-span-2 h-[508px] rounded-xl overflow-hidden">
             <img
               src={Img5}
               alt="Top Right Group"
