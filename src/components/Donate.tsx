@@ -37,7 +37,10 @@ export default function DonateUsLayout() {
             />
           </div>
 
-          <a href="#">
+          <a 
+            href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
+            target="_blank"
+          >
             <div className="aspect-[4/3] rounded-xl flex items-center justify-center bg-primary transition-transform duration-300 transform hover:scale-105 cursor-pointer hover:bg-orange-500">
               <div className="text-white text-5xl md:text-6xl font-semibold leading-tight text-center">
                 Donate<br />Us
