@@ -2,7 +2,7 @@ import Brush from "../assets/brush.png";
 import Hero from "../assets/Hero.png";
 
 const HeroSection = () => (
-  <section className="font-bricolage relative bg-transparent flex flex-col md:flex-row items-center justify-between px-8 py-32 overflow-hidden">
+  <section className="font-bricolage relative bg-transparent flex flex-col py-8 md:flex-row items-center justify-between px-8 md:py-32 overflow-hidden">
     <div className="relative z-10 flex-1 flex flex-col items-start justify-center max-w-xl md:pl-8">
       <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-black">
         Voices of Change,<br />

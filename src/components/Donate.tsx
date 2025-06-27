@@ -1,78 +1,54 @@
-import Img1 from "../assets/Donate1.png"; // top-left
-import Img2 from "../assets/Donate2.png"; // bottom-left
-import Img3 from "../assets/Donate3.png"; // center top
-import Img4 from "../assets/Donate4.png"; // center bottom
-import Img5 from "../assets/Donate5.png"; // top-right
-import Img6 from "../assets/Donate6.png"; // bottom-right
+import Img1 from "../assets/Donate1.png";
+import Img2 from "../assets/Donate2.png";
+import Img3 from "../assets/Donate3.png";
+import Img4 from "../assets/Donate4.png";
+import Img5 from "../assets/Donate5.png";
+import Img6 from "../assets/Donate6.png";
 
 export default function DonateUsLayout() {
   return (
-    <div className="flex items-center justify-center px-4 py-32">
-      <div className="max-w-7xl w-full grid grid-cols-3 gap-4">
-        {/* Left Column: Top + Bottom */}
-        <div className="flex flex-col gap-4">
-          <div className="col-span-1 row-span-1 rounded-xl overflow-hidden">
-            <img
-              src={Img1}
-              alt="Top Left Group"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="col-span-1 row-span-1 w-full h-[502px] rounded-xl overflow-hidden">
-            <img
-              src={Img2}
-              alt="Bottom Left Closeup"
-              className="w-full h-full object-cover"
-            />
-          </div>
+    <div className="flex justify-center items-center py-16 px-4">
+      <div
+        className="grid gap-2 w-full max-w-[380px] md:max-w-[1200px]"
+        style={{
+          display: "grid",
+          gridTemplateAreas: `
+            "img1 img2 img3"
+            "img4 donate img5"
+            "img6 img6 img5"
+          `,
+          gridTemplateColumns: "1fr 1fr 1fr",
+          gridTemplateRows: "auto auto auto",
+        }}
+      >
+        <div style={{ gridArea: "img1" }}>
+          <img src={Img6} alt="Group 1" className="w-full h-full rounded-xl object-cover" />
         </div>
-
-        {/* Center Column: Top Image + Button + Bottom Image */}
-        <div className="flex flex-col gap-4">
-          <div className="aspect-[4/3] rounded-xl overflow-hidden">
-            <img
-              src={Img3}
-              alt="Center Top Celebration"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <a 
-            href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
-            target="_blank"
-          >
-            <div className="aspect-[4/3] rounded-xl flex items-center justify-center bg-primary transition-transform duration-300 transform hover:scale-105 cursor-pointer hover:bg-orange-500">
-              <div className="text-white text-5xl md:text-6xl font-semibold leading-tight text-center">
-                Donate<br />Us
-              </div>
-            </div>
-          </a>
-
-          <div className="aspect-[4/3] rounded-xl overflow-hidden">
-            <img
-              src={Img4}
-              alt="Center Bottom Youth"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        <div style={{ gridArea: "img2" }}>
+          <img src={Img2} alt="Group 2" className="w-full h-full rounded-xl object-cover" />
         </div>
-
-        {/* Right Column: Top + Bottom */}
-        <div className="flex flex-col gap-4">
-          <div className="col-span-1 row-span-2 h-[508px] rounded-xl overflow-hidden">
-            <img
-              src={Img5}
-              alt="Top Right Group"
-              className="w-full h-full object-cover"
-            />
+        <div style={{ gridArea: "img3" }}>
+          <img src={Img3} alt="Group 3" className="w-full h-full rounded-xl object-cover" />
+        </div>
+        <div style={{ gridArea: "img4" }}>
+          <img src={Img4} alt="Group 4" className="w-full h-full rounded-xl object-cover" />
+        </div>
+        <a
+          href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
+          target="_blank"
+          style={{ gridArea: "donate" }}
+        >
+          <div className="w-full h-full rounded-xl bg-primary flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-orange-500">
+            <p className="text-white text-xl sm:text-8xl font-semibold leading-tight text-center">
+              Donate<br />Us
+            </p>
           </div>
-          <div className="col-span-1 row-span-1 rounded-xl overflow-hidden">
-            <img
-              src={Img6}
-              alt="Bottom Right Children"
-              className="w-full h-full object-cover"
-            />
-          </div>
+        </a>
+        <div style={{ gridArea: "img5" }}>
+          <img src={Img5} alt="Group 5" className="w-full h-full rounded-xl object-cover" />
+        </div>
+        <div style={{ gridArea: "img6" }}>
+          <img src={Img1} alt="Group 6" className="w-full h-full rounded-xl object-cover" />
         </div>
       </div>
     </div>

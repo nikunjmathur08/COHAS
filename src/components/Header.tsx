@@ -22,6 +22,7 @@ const Header = () => {
         <img src={Logo} alt="COHAS Logo" className="h-20 w-auto" />
         <span className="sr-only">COHAS - Community of Hope and Support</span>
       </div>
+      {/* Desktop Navigation */}
       <nav className="hidden md:flex space-x-8 text-lg">
         <div className="space-x-8 mt-2">
           <a href="#about" onClick={(e) => handleScroll(e, 'about')} className="hover:text-primary transition">About Us</a>
@@ -38,6 +39,14 @@ const Header = () => {
           Donate Us
         </a>
       </nav>
+      {/* Mobile Only Donate Button */}
+      <a 
+        href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
+        target="_blank"
+        className="md:hidden bg-primary hover:bg-orange-500 text-white font-semibold py-2 px-4 rounded-full transition"
+      >
+        Donate Us
+      </a>
     </header>
   );
 };

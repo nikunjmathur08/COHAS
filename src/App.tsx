@@ -14,11 +14,11 @@ function App() {
       <img 
         src={Background} 
         alt="Background" 
-        className="fixed top-0 left-1/2 transform -translate-x-1/2 object-contain h-auto w-auto max-w-[1400px] max-h-none opacity-25 z-0 pointer-events-none select-none"
+        className="fixed top-0 left-1/2 transform -translate-x-1/2 object-contain h-auto w-auto max-w-[1400px] max-h-none opacity-15 z-0 pointer-events-none select-none"
       />
       
       <div className="relative z-10">
-        <div className="max-w-7xl mx-auto px-6"> {/* ✨ added wrapper */}
+        <div className="max-w-7xl mx-auto md:px-6">
           <Header />
           <main>
             <HeroSection />

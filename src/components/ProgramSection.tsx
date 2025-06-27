@@ -19,7 +19,7 @@ const OurPrograms = () => {
     <section 
       id="programs"
       className="py-8 px-12">
-      <h1 className="text-4xl md:text-5xl font-bricolage font-bold text-black mb-12">
+      <h1 className="text-4xl text-left md:text-5xl font-bricolage font-bold text-black mb-12">
         Our Programs
       </h1>
       <div className="flex flex-wrap gap-10 max-w-6xl">
