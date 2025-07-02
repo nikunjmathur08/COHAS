@@ -83,8 +83,10 @@ const Header = () => {
           </a>
           {aboutOpen && (
             <div className='absolute top-full left-0 bg-white text-black shadow-lg rounded-2xl p-4 space-y-2 min-w-[160px] z-50'>
-              <a href='/about' onClick={() => handleRouteScroll('mission', '/about')} className='hover:text-primary block'>Our Mission</a>
-              <a href='/about' onClick={() => handleRouteScroll('vision', '/about')} className='hover:text-primary block'>Our Vision</a>
+              <a href='/about' onClick={() => handleRouteScroll('overview', '/about')} className='hover:text-primary block'>Overview</a>
+              <a href='/about' onClick={() => handleRouteScroll('team', '/about')} className='hover:text-primary block'>Our Team</a>
+              <a href='/about' onClick={() => handleRouteScroll('success', '/about')} className='hover:text-primary block'>Success Stories</a>
+              <a href='/about' onClick={() => handleRouteScroll('compliances', '/about')} className='hover:text-primary block'>Compliances</a>
             </div>
           )}
         </div>
@@ -109,8 +111,8 @@ const Header = () => {
           )}
         </div>
         <a href="#events" onClick={(e) => handleScroll(e, 'events')} className="hover:text-primary transition">Events</a>
-        <a href="#team" onClick={(e) => handleScroll(e, 'team')} className="hover:text-primary transition">Our Team</a>
-        <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="hover:text-primary transition">Contact Us</a>
+        <a href="#team" onClick={(e) => handleScroll(e, 'team')} className="hover:text-primary transition">Media Coverage</a>
+        <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="hover:text-primary transition">Get Involved</a>
         <a
           href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
           target="_blank"

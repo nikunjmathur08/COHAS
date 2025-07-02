@@ -7,9 +7,9 @@ import Img6 from "../assets/Donate6.png";
 
 export default function DonateUsLayout() {
   return (
-    <div className="flex justify-center items-center py-16 px-4">
+    <div className="flex justify-center items-center py-16 px-4 rounded-xl">
       <div
-        className="grid gap-2 w-full max-w-[380px] md:max-w-[1200px]"
+        className="grid gap-2 w-full max-w-[1000px] overflow-hidden h-[80vh]"
         style={{
           display: "grid",
           gridTemplateAreas: `
@@ -18,20 +18,20 @@ export default function DonateUsLayout() {
             "img6 img6 img5"
           `,
           gridTemplateColumns: "1fr 1fr 1fr",
-          gridTemplateRows: "auto auto auto",
+          gridTemplateRows: "1fr 1fr 1fr",
         }}
       >
         <div style={{ gridArea: "img1" }}>
-          <img src={Img6} alt="Group 1" className="w-full h-full rounded-xl object-cover" />
+          <img src={Img6} alt="Group 1" className="w-full h-full md:max-h-[200px] object-cover rounded-xl" />
         </div>
         <div style={{ gridArea: "img2" }}>
-          <img src={Img2} alt="Group 2" className="w-full h-full rounded-xl object-cover" />
+          <img src={Img2} alt="Group 2" className="w-full h-full md:max-h-[200px] object-cover rounded-xl" />
         </div>
         <div style={{ gridArea: "img3" }}>
-          <img src={Img3} alt="Group 3" className="w-full h-full rounded-xl object-cover" />
+          <img src={Img3} alt="Group 3" className="w-full h-full object-cover rounded-2xl" />
         </div>
         <div style={{ gridArea: "img4" }}>
-          <img src={Img4} alt="Group 4" className="w-full h-full rounded-xl object-cover" />
+          <img src={Img4} alt="Group 4" className="w-full h-full md:max-h-[200px] object-cover rounded-xl" />
         </div>
         <a
           href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
@@ -39,16 +39,16 @@ export default function DonateUsLayout() {
           style={{ gridArea: "donate" }}
         >
           <div className="w-full h-full rounded-xl bg-primary flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:bg-orange-500">
-            <p className="text-white text-xl sm:text-8xl font-semibold leading-tight text-center">
+            <p className="text-white text-xl sm:text-5xl font-semibold leading-tight text-center">
               Donate<br />Us
             </p>
           </div>
         </a>
         <div style={{ gridArea: "img5" }}>
-          <img src={Img5} alt="Group 5" className="w-full h-full rounded-xl object-cover" />
+          <img src={Img5} alt="Group 5" className="w-full h-full object-cover rounded-xl" />
         </div>
         <div style={{ gridArea: "img6" }}>
-          <img src={Img1} alt="Group 6" className="w-full h-full rounded-xl object-cover" />
+          <img src={Img1} alt="Group 6" className="w-full max-h-[200px] object-cover rounded-2xl" />
         </div>
       </div>
     </div>

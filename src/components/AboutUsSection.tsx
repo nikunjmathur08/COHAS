@@ -11,11 +11,8 @@ const AboutUsSection = () => (
         About Us
       </h2>
       <p className="text-base sm:text-lg mt-6 md:mt-8 leading-relaxed text-justify md:text-left max-w-3xl mx-auto md:mx-0">
-        COHAS (Community of Help and Support) is a youth-led organization dedicated to working with children, adolescents, and youth. Our vision is to imagine a world where young people are the architects of a society enriched with values such as equality, fraternity, justice, and boundless love. 
-
-        Currently, we are actively working in various communities, engaging around 100 children and young adults. Our team comprises approximately 60 dedicated volunteers. We conduct life skills training in government schools, where we work with around 120 children.
-
-        Additionally, we organize nature walks for youth to sensitize them about environmental issues. We also have our own theater group, Samta Theater by COHAS, which provides a creative platform for young individuals to express themselves and develop their talents.
+        COHAS (Community of Help and Support) is a youth-led organization dedicated to working with children, adolescents, and youth.
+        Our vision is to imagine a world where young people are the architects of a society enriched with values such as equality, fraternity, justice, and boundless love. 
       </p>
       <a href="/about">
         <button className="bg-primary text-white p-4 rounded-full mt-4"> Know more</button>
