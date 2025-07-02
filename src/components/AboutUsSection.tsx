@@ -17,6 +17,9 @@ const AboutUsSection = () => (
 
         Additionally, we organize nature walks for youth to sensitize them about environmental issues. We also have our own theater group, Samta Theater by COHAS, which provides a creative platform for young individuals to express themselves and develop their talents.
       </p>
+      <a href="/about">
+        <button className="bg-primary text-white p-4 rounded-full mt-4"> Know more</button>
+      </a>
     </div>
 
     {/* Image Section */}

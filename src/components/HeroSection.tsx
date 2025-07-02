@@ -27,7 +27,7 @@ const HeroSection = () => (
       <img
         src={Hero}
         alt="Children performing street play"
-        className="rounded-3xl w-full max-w-lg object-cover"
+        className="rounded-3xl w-full max-w-10xl object-cover"
       />
     </div>
   </section>

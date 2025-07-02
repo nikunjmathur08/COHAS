@@ -5,12 +5,12 @@ const events = [
   {
     title: "Theatre Performance",
     image: Program1,
-    link: "https://example.com/theatre",
+    link: "/event",
   },
   {
     title: "Life Skill Training",
     image: Program1,
-    link: "https://example.com/life-skills",
+    link: "/event",
   },
 ];
 

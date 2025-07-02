@@ -10,7 +10,6 @@ const ClickCard: React.FC<ClickCardProps> = ({ title, image, link }) => {
   return (
     <a
       href={link}
-      target="_blank"
       rel="noopener noreferrer"
       className="font-bricolage relative w-full max-w-sm rounded-3xl overflow-hidden shadow-lg transition-transform hover:scale-[1.08] hover:shadow-xl"
     >
