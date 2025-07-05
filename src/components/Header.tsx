@@ -7,6 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [programOpen, setProgramOpen] = useState(false);
+  const [involveOpen, setInvolveOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const navigate = useNavigate();
@@ -112,7 +113,27 @@ const Header = () => {
         </div>
         <a href="#events" onClick={(e) => handleScroll(e, 'events')} className="hover:text-primary transition">Events</a>
         <a href="#team" onClick={(e) => handleScroll(e, 'team')} className="hover:text-primary transition">Media Coverage</a>
-        <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="hover:text-primary transition">Get Involved</a>
+        <div
+          className='relative'
+          onMouseEnter={() => setInvolveOpen(true)}
+          onMouseLeave={() => setInvolveOpen(false)}
+        >
+          <a 
+            href="#involve" 
+            onClick={(e) => handleScroll(e, 'programs')} 
+            className="hover:text-primary transition"
+          >
+            Get Involved
+          </a>
+          {involveOpen && (
+            <div className='absolute top-full left-0 bg-white text-black shadow-lg rounded-2xl p-4 space-y-2 min-w-[190px] z-50'>
+              <a href='/involve' onClick={() => handleRouteScroll('education', '/involve')} className='hover:text-primary block'>Internship</a>
+              <a href='/involve' onClick={() => handleRouteScroll('healthcare', '/involve')} className='hover:text-primary block'>Partner</a>
+              <a href='/involve' onClick={() => handleRouteScroll('empowerment', '/involve')} className='hover:text-primary block'>Volunteer with Us</a>
+              <a href='/involve' onClick={() => handleRouteScroll('empowerment', '/involve')} className='hover:text-primary block'>Kal Parvarish Abhiyaan</a>
+            </div>
+          )}
+        </div>
         <a
           href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
           target="_blank"
@@ -149,19 +170,19 @@ const Header = () => {
       {/* Mobile Navigation */}
       <div
         ref={menuRef}
-        className={`md:hidden absolute top-16 right-0 w-[160px] bg-[#F8E6DD] font-bricolage text-base px-6 py-2 flex flex-col items-end gap-y-5 rounded-3xl shadow-md transition-transform duration-100 ease-in-out transform origin-top ${
+        className={`md:hidden absolute top-16 right-0 w-[180px] bg-[#F8E6DD] font-bricolage text-base px-6 py-2 flex flex-col items-end gap-y-5 rounded-3xl shadow-md transition-transform duration-100 ease-in-out transform origin-top ${
           isMenuOpen ? 'scale-y-100' : 'scale-y-0 pointer-events-none'
         }`}
       >
         <div className='w-full'>
           <button
             onClick={() => setAboutOpen((prev) => !prev)}
-            className='w-full text-right hover:text-primary'
+            className={`w-full text-right hover:text-primary ${aboutOpen ? 'font-bold': ''}`}
           >
             About Us
           </button>
           {aboutOpen && (
-            <div className='ml-3 mt-1 space-y-2 text-sm text-right'>
+            <div className='ml-3 mt-1 space-y-2 text-md text-right'>
               <a href='/about' onClick={() => handleRouteScroll('mission', '/about')} className='block hover:text-primary'>Our Mission</a>
               <a href='/about' onClick={() => handleRouteScroll('vision', '/about')} className='block hover:text-primary'>Our Vision</a>
             </div>
@@ -170,7 +191,7 @@ const Header = () => {
         <div className='w-full'>
           <button
             onClick={() => setProgramOpen((prev) => !prev)}
-            className='w-full text-right hover:text-primary'
+            className={`w-full text-right hover:text-primary ${programOpen ? 'font-bold': ''}`}
           >
             Our Programs
           </button>
@@ -183,8 +204,23 @@ const Header = () => {
           )}
         </div>
         <a href="#events" onClick={(e) => handleScroll(e, 'events')} className="hover:text-primary transition">Events</a>
-        <a href="#team" onClick={(e) => handleScroll(e, 'team')} className="hover:text-primary transition">Our Team</a>
-        <a href="#contact" onClick={(e) => handleScroll(e, 'contact')} className="hover:text-primary transition">Contact Us</a>
+        <a href="#team" onClick={(e) => handleScroll(e, 'team')} className="hover:text-primary transition">Media Coverage</a>
+        <div className='w-full'>
+          <button
+            onClick={() => setInvolveOpen((prev) => !prev)}
+            className={`w-full text-right hover:text-primary ${involveOpen ? 'font-bold': ''}`}
+          >
+            Get Involved
+          </button>
+          {involveOpen && (
+            <div className='ml-3 mt-1 space-y-2 text-sm text-right'>
+              <a href='/involve' onClick={() => handleRouteScroll('education', '/involve')} className='block hover:text-primary'>Internship</a>
+              <a href='/involve' onClick={() => handleRouteScroll('healthcare', '/involve')} className='block hover:text-primary'>Partner</a>
+              <a href='/involve' onClick={() => handleRouteScroll('empowerment', '/involve')} className='block hover:text-primary'>Volunteer with Us</a>
+              <a href='/involve' onClick={() => handleRouteScroll('empowerment', '/involve')} className='block hover:text-primary'>Kal Parvarish Abhiyaan</a>
+            </div>
+          )}
+        </div>
         <a
           href="https://milaap.org/fundraisers/support-underprivilege-children-of-community"
           target="_blank"

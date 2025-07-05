@@ -2,24 +2,63 @@ const Footer = () => {
   return (
     <footer 
       id="contact"
-      className="font-bricolage bg-primary text-white py-16 px-8 md:px-20 relative overflow-hidden">
-      
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-12 md:gap-0 relative z-10">
-        {/* Left Section */}
-        <div className="space-y-2 text-lg font-medium">
-          <div className="text-2xl font-bold">Ankush</div>
-          <div>+91 7982707948</div>
-          <a href="mailto:ankushcohas@gmail.com" className="hover:underline">
-            ankushcohas@gmail.com
-          </a>
+      className="font-bricolage bg-primary text-white py-16 px-8 md:px-20 relative overflow-hidden"
+    >
+      {/* Columns */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 relative z-10">
+        
+        {/* Sitelinks */}
+        <div>
+          <h3 className="text-xl font-bold mb-4">Sitelinks</h3>
+          <ul className="space-y-2 text-white font-normal">
+            <li><a href="/" className="hover:underline">Home</a></li>
+            <li><a href="/about" className="hover:underline">About Us</a></li>
+            <li><a href="/program" className="hover:underline">Our Programs</a></li>
+            <li><a href="/involve" className="hover:underline">Get Involved</a></li>
+          </ul>
         </div>
 
-        {/* Right Quote */}
-        <div className="max-w-md text-right text-lg text-balance leading-relaxed font-medium self-end ml-auto">
-          Celebrating India's traditions while<br />
-          building a future that's educated,<br />
-          expressive and empowered
+        {/* About */}
+        <div>
+          <h3 className="text-xl font-bold mb-4">About</h3>
+          <ul className="space-y-2 text-white font-normal">
+            <li><a href="/about" className="hover:underline">Overview</a></li>
+            <li><a href="/about" className="hover:underline">Our Team</a></li>
+            <li><a href="/about" className="hover:underline">Success Stories</a></li>
+            <li><a href="/about" className="hover:underline">Compliances</a></li>
+            <li><a href="/about" className="hover:underline">Media Coverage</a></li>
+          </ul>
         </div>
+
+        {/* Our Programs */}
+        <div>
+          <h3 className="text-xl font-bold mb-4">Our Programs</h3>
+          <ul className="space-y-2 text-white font-normal">
+            <li><a href="/program" className="hover:underline">Education</a></li>
+            <li><a href="/program" className="hover:underline">Healthcare</a></li>
+            <li><a href="/program" className="hover:underline">Empowerment</a></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div>
+          <h3 className="text-xl font-bold mb-2">Contact info</h3>
+          <div className="space-y-4 text-white text-sm font-normal">
+            <div>
+              <div className="text-white text-lg font-bold">📍 LOCATION</div>
+              <p>Nehru Nagar, Lajpat Nagar, New Delhi, 110065</p>
+            </div>
+            <div>
+              <div className="text-white text-lg font-bold">📞 CALL US</div>
+              <p className="text-base text-white">+91 7982707948</p>
+            </div>
+            <div>
+              <div className="text-white text-lg font-bold">✉️ EMAIL US</div>
+              <a href="mailto:ankushcohas@gmail.com" className="text-base text-white hover:underline">ankushcohas@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       {/* COHAS background text */}

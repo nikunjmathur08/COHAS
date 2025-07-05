@@ -1,3 +1,5 @@
+import { transform } from 'typescript';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -6,6 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        'marquee-smooth': 'marquee 11s linear infinite',
+      },
       fontFamily: {
         bricolage: ['"Bricolage Grotesque"', 'sans-serif'],
       },

@@ -7,9 +7,8 @@ import EventSection from '../components/EventSection';
 import TeamSection from '../components/TeamSection';
 import Donate from '../components/Donate';
 import Footer from '../components/Footer';
-import Sponsors from '../components/Sponsors';
 
-const HomePage = () => {
+const InvolvePage = () => {
   return (
     <div className="min-h-screen bg-[#F8E6DD] relative overflow-x-hidden">
       <img 
@@ -29,7 +28,6 @@ const HomePage = () => {
             <TeamSection />
           </main>
           <Donate />
-          <Sponsors />
           <Footer />
         </div>
       </div>
@@ -37,4 +35,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default InvolvePage;
