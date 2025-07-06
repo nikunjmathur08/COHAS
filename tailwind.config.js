@@ -15,7 +15,7 @@ export default {
         },
       },
       animation: {
-        'marquee-smooth': 'marquee 11s linear infinite',
+        'marquee-smooth': 'marquee 12s linear infinite',
       },
       fontFamily: {
         bricolage: ['"Bricolage Grotesque"', 'sans-serif'],
