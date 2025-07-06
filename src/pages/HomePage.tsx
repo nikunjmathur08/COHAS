@@ -1,7 +1,7 @@
 import Background from '../assets/Background.png';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
-import AboutUsSection from '../components/AboutUsSection';
+import { AboutUsSection, StatsSection} from '../components/AboutUsSection';
 import ProgramSection from '../components/ProgramSection';
 import EventSection from '../components/EventSection';
 import TeamSection from '../components/TeamSection';
@@ -24,6 +24,7 @@ const HomePage = () => {
           <main>
             <HeroSection />
             <AboutUsSection />
+            <StatsSection />
             <ProgramSection />
             <EventSection />
             <TeamSection />

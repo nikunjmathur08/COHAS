@@ -1,38 +1,27 @@
-import Background from '../assets/Background.png';
-import Header from '../components/Header';
-import HeroSection from '../components/HeroSection';
-import AboutUsSection from '../components/AboutUsSection';
-import ProgramSection from '../components/ProgramSection';
-import EventSection from '../components/EventSection';
-import TeamSection from '../components/TeamSection';
-import Donate from '../components/Donate';
-import Footer from '../components/Footer';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
-const InvolvePage = () => {
+export default function EventPage () {
   return (
     <div className="min-h-screen bg-[#F8E6DD] relative overflow-x-hidden">
-      <img 
-        src={Background} 
-        alt="Background" 
-        className="fixed top-0 left-1/2 transform -translate-x-1/2 object-contain h-auto w-auto max-w-[1400px] max-h-none opacity-15 z-0 pointer-events-none select-none"
-      />
-      
       <div className="relative z-10">
         <div className="max-w-7xl mx-auto md:px-6">
           <Header />
-          <main>
-            <HeroSection />
-            <AboutUsSection />
-            <ProgramSection />
-            <EventSection />
-            <TeamSection />
+          <main className="py-20">
+            <h1 className="text-4xl sm:text-5xl font-bold mb-6 text-center">About COHAS</h1>
+            <p className="text-base sm:text-lg leading-relaxed text-justify max-w-4xl mx-auto px-4">
+              Education
+            </p>
+            <p className="text-base sm:text-lg leading-relaxed text-justify max-w-4xl mx-auto px-4">
+              Healthcare
+            </p>
+            <p className="text-base sm:text-lg leading-relaxed text-justify max-w-4xl mx-auto px-4">
+              Empowerment
+            </p>
           </main>
-          <Donate />
           <Footer />
         </div>
       </div>
     </div>
   );
 };
-
-export default InvolvePage;
